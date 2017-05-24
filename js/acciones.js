@@ -24,7 +24,7 @@ $(document).ready(function (e){
 					maximumAge:3600000
 					}
 					
-					var watchID=navigator.geolocation.getCurrentPosition(onSucces, onError, options);
+					var watchID=navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
 					
 					function onSuccess(position){
 						
@@ -51,7 +51,7 @@ $(document).ready(function (e){
 			  enableHighAccuracy:true,
 			  }
 			  
-			  var watchID=navigator.geolocation.watchPosition(onSucces, onError, options);
+			  var watchID=navigator.geolocation.watchPosition(onSuccess, onError, options);
 			  
 			  function onSuccess(position){
 				  
